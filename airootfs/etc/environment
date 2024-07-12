@@ -1,0 +1,13 @@
+#
+# This file is parsed by pam_env module
+#
+# Syntax: simple "KEY=VAL" pairs on separate lines
+#
+XDG_CURRENT_DESKTOP=hyprland
+XDG_SESSION_DESKTOP=hyprland
+EDITOR=code
+BROWSER=googlr-chrome
+TERMINAL=kitty
+
+# uncomment only if cursor is not visible in wayland sessions
+#WLR_NO_HARDWARE_CURSORS=1
