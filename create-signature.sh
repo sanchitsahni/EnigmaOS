@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-## Copyright (C) 2020-2024 Aditya Shakya <adi1090x@gmail.com>
-
 ## Generate sha256sum and gpg signature files
 PWD=`pwd`
 DIR="$PWD/out"
@@ -22,7 +20,7 @@ if [[ -n "$RELEASE" ]]; then
 	fi	
 	
 	echo -e "\n[*] Generating gpg signature for ${RELEASE} ..."
-	gpg --default-key adi1090x@gmail.com --output ${RELEASE}.sig --detach-sig ${RELEASE}
+	gpg --default-key sanchitsahni07@gmail.com --output ${RELEASE}.sig --detach-sig ${RELEASE}
 	if [[ -e "${RELEASE}.sig" ]]; then
 		echo -e "[*] Signature generated successfully.\n"
 	else
